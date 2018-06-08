@@ -1,0 +1,23 @@
+{
+  "name": "guide-conso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clairezed/guide-conso.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clairezed/guide-conso/issues"
+  },
+  "homepage": "https://github.com/clairezed/guide-conso#readme",
+  "devDependencies": {
+    "serve": "^8.1.1"
+  }
+}
