@@ -1,5 +1,17 @@
 # Infusion
 
+## Apprentissages
+
+Claire souhaite apprendre : 
+- Messages de commit
+- Résilience front-end
+- Releases
+- "Faire en JS ce que je fais avec mon Rails à moi" (même niveau de confiance)
+- Lint
+- Node.js ?
+
+
+
 ## Pull request
 
 Claire créé des branches et des pull request systématiquement
