@@ -1,5 +1,9 @@
 # Guide Conso
 
-Ce repo est l'objet d'une formation infusion entre [Claire](https://github.com/clairezed) et [David](https://github.com/DavidBruant)
+This repo is a *formation infusion* between [Claire](https://github.com/clairezed) and [David](https://github.com/DavidBruant)
 
-[Détails de l'infusion](infusion.md)
+[Details of this infusion (French)](infusion.md)
+
+## Language
+
+English
