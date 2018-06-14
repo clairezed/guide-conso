@@ -1,4 +1,5 @@
-const guideMap = L.map('mapid', {
+const mapElement = document.querySelector('[data-map="main"]')
+const guideMap = L.map(mapElement, {
 	center: [48.1833300, 6.4500000],
 	zoom: 11
 });
