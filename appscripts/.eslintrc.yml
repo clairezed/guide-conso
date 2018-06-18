@@ -1,0 +1,23 @@
+env:
+  browser: true
+extends: 'eslint:recommended'
+rules:
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - always
+globals:
+  ScriptApp: false
+  SpreadsheetApp: false
+  MailApp: false
+  UrlFetchApp: false
+  addSpreadsheetTrigger: false
+  onFormSubmitTrigger: false
