@@ -1,4 +1,6 @@
-const mapElement = document.querySelector('[data-map="main"]')
+/* global L:false, Papa:false */
+
+const mapElement = document.querySelector('[data-map="main"]');
 const guideMap = L.map(mapElement, {
 	center: [48.1833300, 6.4500000],
 	zoom: 11
@@ -16,14 +18,14 @@ Papa.parse('guide-conso-data.csv', {
 	complete: function (results) {
 		displayAddressesOnMap(results.data);
 	},
-	error: function (error, file) {
+	error: function (error) {
 		console.error(error);
 	}
 });
 
 function displayAddressesOnMap(addresses) {
-	for(address of addresses){
+	for(let address of addresses){
 		const {Latitude: lat, Longitude : long} = address;
 		L.marker([lat, long]).addTo(guideMap);
-	};
-};
+	}
+}
