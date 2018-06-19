@@ -1,5 +1,8 @@
 env:
-  browser: true
+  "googleappsscript/googleappsscript": true
+parserOptions:
+  ecmaVersion: 5
+plugins: ["googleappsscript"]
 extends: 'eslint:recommended'
 rules:
   indent:
@@ -14,10 +17,3 @@ rules:
   semi:
     - error
     - always
-globals:
-  ScriptApp: false
-  SpreadsheetApp: false
-  MailApp: false
-  UrlFetchApp: false
-  addSpreadsheetTrigger: false
-  onFormSubmitTrigger: false
