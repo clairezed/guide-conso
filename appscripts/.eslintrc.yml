@@ -1,19 +1,6 @@
 env:
+  es6: false
   "googleappsscript/googleappsscript": true
 parserOptions:
   ecmaVersion: 5
 plugins: ["googleappsscript"]
-extends: 'eslint:recommended'
-rules:
-  indent:
-    - error
-    - 2
-  linebreak-style:
-    - error
-    - unix
-  quotes:
-    - error
-    - single
-  semi:
-    - error
-    - always
