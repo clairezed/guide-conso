@@ -1,0 +1,6 @@
+env:
+  es6: false
+  "googleappsscript/googleappsscript": true
+parserOptions:
+  ecmaVersion: 5
+plugins: ["googleappsscript"]
