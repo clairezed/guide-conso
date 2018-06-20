@@ -4,6 +4,8 @@ This repo is a *formation infusion* between [Claire](https://github.com/claireze
 
 [Details of this infusion (French)](infusion.md)
 
+Branch GAS-test-push : this branch purpose is to give a deletable branch to test commiting and pushing files from Google Apps Script to github.
+
 ## Getting Started
 
 ### Installing
