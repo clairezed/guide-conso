@@ -56,7 +56,7 @@ function setRangeCoordinates(event, coordinates) {
 
 /* Function GREATLY inspired of https://script.google.com/d/1jI_BpCFqKstGFQ8sNY8nJwjOiXXhubKDvD7G9h6U1iE63mzX2e4U-ak_/edit?usp=sharing */
 function commitDataToGithub() {
-  var branch = 'GAS-test-push';
+  var branch = 'master';
   var githubToken = PropertiesService.getScriptProperties().getProperty('githubAuthToken');
   
   Github.setTokenService(githubToken);
