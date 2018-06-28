@@ -1,5 +1,3 @@
-/* exported Github */
-
 /*
 
 Following code ported from https://github.com/michael/github
@@ -131,7 +129,7 @@ var Github = (function() {
     var shouldUseDataAsParams = data && (typeof data === 'object') && methodHasNoBody(method);
     if (shouldUseDataAsParams) {
       url = buildUrl_(url, data);
-    } else if(data !== null) {
+    } else if (data !== null) {
       config.payload = JSON.stringify(data);
     }
         

@@ -28,21 +28,21 @@ function formatAddress(event) {
 function getAddressCoordinates(httpResponse) {
   var data = httpResponse.getContentText('UTF-8');
   var parsedData = JSON.parse(data);
-  if(parsedData.features[0]){
+  if (parsedData.features[0]){
     var coordinates = parsedData.features[0].geometry.coordinates;
     return coordinates;
-  }else{
+  } else {
     MailApp.sendEmail({
       to: 'clairezuliani@gmail.com',
       subject: '[GuideConso] appscript error',
       htmlBody: 'No geocoding response for : '+ parsedData.query
     });
-    return null; 
+    return null;
   }
 }
 
 function setRangeCoordinates(event, coordinates) {
-  if(coordinates){
+  if (coordinates){
     var longitude = coordinates[0];
     var latitude = coordinates[1];
     var row = event.range.getRow();
@@ -68,7 +68,7 @@ function commitDataToGithub() {
   try {
     var resp = Github.Repository.createFile(branch, fileName, csvFile, 'Add file '+fileName);
     console.log(resp);
-  } catch(e) {
+  } catch (e) {
     var git_file_obj = Github.Repository.getContents({ref: branch}, fileName);
     Github.Repository.updateFile(branch, fileName, csvFile, git_file_obj.sha, 'Update file '+fileName, {encode: false});
   }
@@ -106,7 +106,7 @@ function spreadsheetToCsv() {
     }
     return csvFile;
   }
-  catch(err) {
+  catch (err) {
     console.log(err);
   }
 }
