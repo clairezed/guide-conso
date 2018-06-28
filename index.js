@@ -26,6 +26,11 @@ Papa.parse('guide-conso-data.csv', {
 function displayAddressesOnMap(addresses) {
   for (const address of addresses){
     const {Latitude: lat, Longitude : long} = address;
-    L.marker([lat, long]).addTo(guideMap);
+    let marker = L.marker([lat, long]).addTo(guideMap);
+    marker.bindPopup(
+      `<b>${address['Nom de la structure']} </b><br>`+
+        `${address['Rue']} <br>`+
+        `${address['Code postal']} ${address['Ville']}<br>`
+    ).openPopup();
   }
 }
