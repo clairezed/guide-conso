@@ -5,19 +5,23 @@
   "main": "index.js",
   "scripts": {
     "start": "serve",
+    "lint": "eslint .",
+    "lintFix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/clairezed/guide-conso.git"
   },
-  "author": "",
+  "author": "Claire Zuliani",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/clairezed/guide-conso/issues"
   },
   "homepage": "https://github.com/clairezed/guide-conso#readme",
   "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-googleappsscript": "^1.0.1",
     "serve": "^8.1.1"
   }
 }
